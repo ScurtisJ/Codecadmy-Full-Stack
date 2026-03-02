@@ -1,0 +1,181 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: lightgray;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    margin-bottom: 3px;
+    align-items: center;
+    position: fixed;
+    background-color: maroon;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    z-index: 1;
+}
+
+header h1{
+    min-width: 550px;
+}
+
+#origins, #evolution, #gameplay, #viral-explosion, #demo-game {
+    scroll-margin-top: 5.5rem;
+
+}
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    white-space: nowrap;
+
+    width: 100%;
+    height: 20px;
+    margin-right: 3rem;
+}
+
+@media (max-width: 750px) {
+    nav {
+        display: none; 
+    }
+}
+
+nav a {
+    color: lightgray;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(211, 211, 211);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h2{
+    color: rgb(93, 93, 255);
+}
+div.section.origins {
+    border-top: 4px solid white;
+}
+
+div.section.demo-game {
+    border-bottom: 4px solid white;
+}
+
+
+div.section {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    margin: 0;
+    padding: 0 0 0 1rem;
+    height: 20rem;
+    display: flex;
+    align-items: stretch;
+}
+
+div.section > div.text{
+    width: 70%;
+    min-width: 45rem;
+    flex: 7;
+}
+
+div.section > div.img{
+    width: 30%;
+    align-self: center;
+    flex: 3;
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+div.img > img{
+    justify-self: center;
+}
+
+div p {
+    max-width: 65rem;
+}
+
+.evolution h5 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.demo-game {
+    max-width: 100%;
+    min-width: 25rem;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    
+}
+
+div.game-text{
+    max-width: 65rem;
+    min-width: 19rem;
+    padding: 0 0 0 1rem;
+    margin: 0;
+
+    flex: 1;
+}
+
+div.game{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    flex: 1.5;
+}
+
+div.game h2{
+    margin: 0;
+}
+
+div.game p{
+    text-align: center;
+    font-size: 20px;
+}
+
+div.win {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+div.win img{
+    max-width: 15rem;
+    max-height: 15rem;
+    object-fit: contain;
+
+    align-self: center;
+}
+
+div.win h2{
+    text-align: center;
+    color: goldenrod;
+}
+
+div.game p.cookie {
+    font-size: 12rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
