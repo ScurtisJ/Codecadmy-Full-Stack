@@ -1,3 +1,4 @@
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setCurrentSubreddit } from './subredditSlice';
 import { loadPosts } from '../posts/postsSlice';

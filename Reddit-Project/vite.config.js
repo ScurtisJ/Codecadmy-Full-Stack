@@ -3,12 +3,18 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react({ jsxRuntime: 'automatic' })],
+  oxc: {
+    jsx: {
+      runtime: 'automatic',
+      importSource: 'react',
+    },
+  },
   test: {
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/test/setup.js',
-    pool: 'threads',
+    pool: 'forks',
   },
   server: {
     proxy: {

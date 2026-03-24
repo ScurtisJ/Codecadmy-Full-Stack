@@ -1,3 +1,4 @@
+import React from 'react';
 import SearchBar from '../features/search/SearchBar';
 
 const Header = () => {

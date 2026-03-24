@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchTerm, addToHistory } from './searchSlice';
 import { loadSearchResults } from '../posts/postsSlice';
